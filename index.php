@@ -44,34 +44,34 @@ if ( isset($data["do_goroscope"]) )
 
     <body>
 
-    <?php if ($get_predict ) echo '<script type="text/javascript">alert("' . $result . '");</script>';?>
-    <div class="data">
-        <form method="POST" action="/">
-            <p>Find out your destiny</p>
-            <?php if ( $error != NULL ) echo "<div style='color:#ff0000'>$error</div>" ?>
-            <input type="number" name="b_day" class="bday" value=<?php echo @$data["b_day"]?>>
+        <?php if ($get_predict ) echo '<script type="text/javascript">alert("' . $result . '");</script>';?>
+        <div class="data">
+            <form method="POST" action="/">
+                <p>Find out your destiny</p>
+                <?php if ( $error != NULL ) echo "<div style='color:#ff0000'>$error</div>" ?>
+                <input type="number" name="b_day" class="bday" value=<?php echo @$data["b_day"]?>>
 
-            <select name="b_month">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
+                <select name="b_month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
 
-            <input type="number" name="b_year" class="byear" value=<?php echo @$data["b_year"]?>>
+                <input type="number" name="b_year" class="byear" value=<?php echo @$data["b_year"]?>>
 
-            <p><input type="submit" name="do_goroscope" value="Find out"></p>
+                <p><input type="submit" name="do_goroscope" value="Find out"></p>
 
-        </form>
-    </div>
+            </form>
+        </div>
 
     </body>
 </html>
