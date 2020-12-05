@@ -6,33 +6,28 @@
 body {
 	background-image: url("../images/bg.jpg");
 	-moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+	-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+	-o-background-size: 100%; /* Opera 9.6+ */
+	background-size: 100%; /* Современные браузеры */
 	width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    align-content: center; 
-    justify-content: center; 
-    overflow: auto; 
-
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	overflow: auto;
 }
 
 .data {
 	border: 3px black solid;
 	background-color: white;
-	/*opacity: 0.4;*/
 	height: 260px;
 	width: 600px;
 	background-color: rgba(0, 0, 0, 0.4);
-
 }
-
-
 
 form {
 	padding: 50px;
@@ -75,7 +70,6 @@ input[type="submit"] {
 	width: 200px;
 	color: white;
 	font-size: 20px;
-
 }
 
 select {
@@ -90,12 +84,11 @@ select {
 
 option {
 	text-decoration: none;
-	/*background-color: #53829b;*/
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
