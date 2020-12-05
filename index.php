@@ -1,6 +1,5 @@
 <?php
 
-
 $data = $_POST;
 $get_predict = false;
 
@@ -30,27 +29,23 @@ if ( isset($data["do_goroscope"]) )
         curl_close($ch);
         $get_predict = true;
     }
-
 }
-
-
-
-
 ?>
 
 
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
     <head>
         <title>Horoscope</title>
 
         <link rel="stylesheet" type="text/css" href="/css/style.css">
     </head>
+
+
     <body>
+
     <?php if ($get_predict ) echo '<script type="text/javascript">alert("' . $result . '");</script>';?>
     <div class="data">
-
-
         <form method="POST" action="/">
             <p>Find out your destiny</p>
             <?php if ( $error != NULL ) echo "<div style='color:#ff0000'>$error</div>" ?>
@@ -71,7 +66,6 @@ if ( isset($data["do_goroscope"]) )
                 <option value="12">December</option>
             </select>
 
-
             <input type="number" name="b_year" class="byear" value=<?php echo @$data["b_year"]?>>
 
             <p><input type="submit" name="do_goroscope" value="Find out"></p>
@@ -80,5 +74,5 @@ if ( isset($data["do_goroscope"]) )
     </div>
 
     </body>
-    </html>
+</html>
 
