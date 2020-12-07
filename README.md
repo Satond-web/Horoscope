@@ -1,6 +1,6 @@
 # Horoscope
 
-### [Demo](https://horoscope-web-page.herokuapp.com/)
+### [Demo](https://horoscope.satond.ru/)
 #### ![](https://i.imgur.com/LtqCs0D.png)
 
 
